@@ -34,7 +34,7 @@ public class ContractService {
 			double fullQuota = onlinePaymentService.paymentFee(upDatedQuota) + upDatedQuota;
 			
 			
-			contract.getInstallments().add(new Installment(dueDate, fullQuota, contract));
+			contract.getInstallments().add(new Installment(dueDate, fullQuota));
 		}
 
 	}

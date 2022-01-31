@@ -9,12 +9,9 @@ public class Installment {
 	private Date dueDate;
 	private Double amount;
 	
-	private Contract contract;
-
-	public Installment(Date dueDate, Double amount, Contract contract) {
+	public Installment(Date dueDate, Double amount) {
 		this.dueDate = dueDate;
 		this.amount = amount;
-		this.contract = contract;
 	}
 
 	public Date getDueDate() {
@@ -31,14 +28,6 @@ public class Installment {
 
 	public void setAmount(Double amount) {
 		this.amount = amount;
-	}
-
-	public Contract getContract() {
-		return contract;
-	}
-
-	public void setContract(Contract contract) {
-		this.contract = contract;
 	}
 	
 	@Override
